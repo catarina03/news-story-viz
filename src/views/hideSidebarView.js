@@ -1,4 +1,4 @@
-import Event from '../aux/event.js';
+import Event from '../auxiliar/event.js';
 
 const HideSidebarView = () => {
 	const hideSidebarEvent = Event();

@@ -1,6 +1,6 @@
 import SceneInfoView from '../views/sceneInfoView.js';
-import { NarrativeEvents } from '../aux/consts.js';
-import { extractEntities } from '../aux/extractEntities.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
+import { extractEntities } from '../auxiliar/extractEntities.js';
 
 const SceneInfoController = (narrative) => {
 	const sceneInfoView = SceneInfoView();

@@ -1,5 +1,5 @@
 import OptionsView from '../views/optionsView.js';
-import { svgToPdf } from '../aux/aux.js';
+import { svgToPdf } from '../auxiliar/aux.js';
 
 const OptionsController = (narrative) => {
 	const optionsView = OptionsView();

@@ -1,5 +1,5 @@
 import TimeSelectView from '../views/timeSelectView.js';
-import { NarrativeEvents } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
 
 const TimeSelectController = (narrative) => {
 	const timeSelectView = TimeSelectView();

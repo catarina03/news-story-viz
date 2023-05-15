@@ -1,5 +1,5 @@
 import TimelineView from '../views/timelineView.js';
-import { NarrativeEvents } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
 
 const TimelineController = (narrative) => {
 	const timelineView = TimelineView();

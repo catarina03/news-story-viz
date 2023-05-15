@@ -1,4 +1,4 @@
-import { createTransition } from '../aux/aux.js';
+import { createTransition } from '../auxiliar/aux.js';
 
 const AppearanceVisualizationView = () => {
 	function init(shouldHideCharacter, shouldHideScene) {

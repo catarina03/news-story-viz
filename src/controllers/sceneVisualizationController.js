@@ -1,5 +1,5 @@
 import SceneVisualizationView from '../views/sceneVisualizationView.js';
-import { NarrativeEvents } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
 
 const SceneVisualizationController = (narrative) => {
 	const sceneVisualizationView = SceneVisualizationView();

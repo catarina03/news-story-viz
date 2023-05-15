@@ -1,5 +1,5 @@
 import AppearanceVisualizationView from '../views/appearanceVisualizationView.js';
-import { NarrativeEvents } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
 
 const LinkVisualizationController = (narrative) => {
 	const appearanceVisualizationView = AppearanceVisualizationView();

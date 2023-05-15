@@ -1,4 +1,4 @@
-import NarrativeEvent from '../aux/event.js';
+import NarrativeEvent from '../auxiliar/event.js';
 
 const CharacterSelectView = () => {
 	const selectCharacterEvent = NarrativeEvent();

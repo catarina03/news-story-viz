@@ -1,5 +1,5 @@
 import IntroVisualizationView from '../views/introVisualizationView.js';
-import { NarrativeEvents } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
 
 const IntroVisualizationController = (narrative) => {
 	const introVisualizationView = IntroVisualizationView();

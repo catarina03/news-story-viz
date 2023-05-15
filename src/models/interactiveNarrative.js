@@ -1,6 +1,6 @@
-import { NarrativeEvents } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
 import Narrative from '../../lib/narrative.js';
-import Event from '../aux/event.js';
+import Event from '../auxiliar/event.js';
 
 const InteractiveNarrative = () => {
 	const narrative = Narrative();

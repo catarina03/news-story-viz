@@ -1,4 +1,4 @@
-import FileHandler from '../aux/fileHandler.js';
+import FileHandler from '../auxiliar/fileHandler.js';
 import StorylinePickerView from '../views/storylinePickerView.js';
 
 const StorylinePickerController = (narrative) => {

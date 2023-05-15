@@ -1,5 +1,5 @@
-import { convertDate } from '../aux/convertDates.js';
-import Event from '../aux/event.js';
+import { convertDate } from '../auxiliar/convertDates.js';
+import Event from '../auxiliar/event.js';
 
 const TIMEFRAME_HIDE_ID = 'timeline-hide-scenes';
 const TIMEFRAME_RESET_ID = 'timeline-reset';

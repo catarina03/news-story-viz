@@ -1,5 +1,5 @@
-import Event from '../aux/event.js';
-import { VisibilityOptions } from '../aux/consts.js';
+import Event from '../auxiliar/event.js';
+import { VisibilityOptions } from '../auxiliar/consts.js';
 
 const OptionsView = () => {
 	const hideUnselectedCharsEvent = Event();

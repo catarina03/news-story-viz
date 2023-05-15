@@ -1,5 +1,5 @@
 import TitleView from '../views/titleView.js';
-import { NarrativeEvents } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
 
 const TitleController = (narrative) => {
 	const titleView = TitleView();

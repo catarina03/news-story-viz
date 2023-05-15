@@ -14,7 +14,7 @@ const FileHandler = () => {
   async function file(filename) {
     udpatePageTitle(filename);
     const response = await fetch(
-      `/news-story-viz/assets/narratives/${filename}`
+      `/assets/narratives/${filename}`
     );
     _currFile = filename;
     const data = await response.json();

@@ -1,5 +1,5 @@
 import CharacterSelectView from '../views/characterSelectView.js';
-import { NarrativeEvents } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
 
 const CharacterSelectController = (narrative) => {
 	const characterSelectView = CharacterSelectView();

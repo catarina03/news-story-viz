@@ -1,6 +1,6 @@
-import Event from '../aux/event.js';
-import { ScrollDirection } from '../aux/consts.js';
-import { convertDate } from '../aux/convertDates.js';
+import Event from '../auxiliar/event.js';
+import { ScrollDirection } from '../auxiliar/consts.js';
+import { convertDate } from '../auxiliar/convertDates.js';
 
 const SceneInfoView = () => {
 	const resetFocusEvent = Event();

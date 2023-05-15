@@ -1,5 +1,5 @@
 import SceneSelectView from '../views/sceneSelectView.js';
-import { NarrativeEvents } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
 
 const SceneSelectController = (narrative) => {
 	const sceneSelectView = SceneSelectView();

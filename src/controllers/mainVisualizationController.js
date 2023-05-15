@@ -1,4 +1,4 @@
-import { NarrativeEvents } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
 import MainVisualizationView from '../views/mainVisualizationView.js';
 
 const PADDING = 10;

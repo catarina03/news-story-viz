@@ -1,6 +1,6 @@
 import LocationsView from '../views/locationsView.js';
-import { NarrativeEvents } from '../aux/consts.js';
-import { VisibilityOptions } from '../aux/consts.js';
+import { NarrativeEvents } from '../auxiliar/consts.js';
+import { VisibilityOptions } from '../auxiliar/consts.js';
 
 const LocationsController = (narrative) => {
 	const locationsView = LocationsView();

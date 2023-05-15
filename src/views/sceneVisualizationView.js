@@ -1,7 +1,7 @@
-import Event from '../aux/event.js';
-import { SCENE_WIDTH } from '../aux/consts.js';
-import { createTransition } from '../aux/aux.js';
-import { convertDate } from '../aux/convertDates.js';
+import Event from '../auxiliar/event.js';
+import { SCENE_WIDTH } from '../auxiliar/consts.js';
+import { createTransition } from '../auxiliar/aux.js';
+import { convertDate } from '../auxiliar/convertDates.js';
 
 const VisualizationView = () => {
 	const changeActiveSceneEvent = Event();
