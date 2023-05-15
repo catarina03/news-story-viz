@@ -1,5 +1,5 @@
 import { SCENE_WIDTH } from '../auxiliar/consts.js';
-import { createTransition } from '../auxiliar/aux.js';
+import { createTransition } from '../auxiliar/auxiliar.js';
 import { convertDate } from '../auxiliar/convertDates.js';
 import Event from '../auxiliar/event.js';
 

@@ -1,5 +1,5 @@
 import Event from '../auxiliar/event.js';
-import { createTransition } from '../auxiliar/aux.js';
+import { createTransition } from '../auxiliar/auxiliar.js';
 
 const IntroVisualizationView = () => {
 	const dragIntroEvent = Event();

@@ -1,4 +1,4 @@
-import { createTransition } from '../auxiliar/aux.js';
+import { createTransition } from '../auxiliar/auxiliar.js';
 
 const LinkVisualizationView = () => {
 	/* links: [
