@@ -10,6 +10,11 @@ const TimelineView = () => {
 	const dragDateEvent = Event();
 	let shouldShowDates = false;
 	let narrative;
+	// Tooltip
+	let tooltip = d3.select("body")
+		.append("div")
+		.attr("class", "tooltip")
+		.style("opacity", 0);
 
 	function init(_narrative) {
 		narrative = _narrative || narrative;
@@ -51,16 +56,35 @@ const TimelineView = () => {
 		const datePoints = svg
 			.selectAll('.date-group')
 			.data(scenes, (scene) => scene.id)
+			//.data(descriptions, (description) => description.description)
 			.join((enter) => {
 				const group = enter.append('g').attr('class', 'date-group').call(drag);
 
 				group
 					.append('text')
+					//.attr('title', 'hey')
 					.attr('class', 'date-text')
 					.attr('text-anchor', 'start')
 					.attr('y', -8)
 					.attr('x', 0)
-					.attr('transform', 'rotate(-25)');
+					.attr('transform', 'rotate(-25)')
+					.on('mouseenter', function (e, d) {
+						const tooltip = d3.select('.tooltip');
+						if (!d.hidden) {
+							tooltip.transition().duration(200).style('opacity', 1);
+							tooltip
+								.select('.tooltip-text')
+								.text(d.description);
+							tooltip
+								.style('left', e.pageX + 'px')
+								.style('top', e.pageY + 'px');
+						}
+					})
+					.on('mouseleave', function (_) {
+						const tooltip = d3.select('.tooltip');
+
+						tooltip.transition().duration(500).style('opacity', 0);
+					});
 
 				group
 					.append('circle')

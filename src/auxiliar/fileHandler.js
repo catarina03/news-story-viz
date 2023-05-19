@@ -9,6 +9,7 @@ const FileHandler = () => {
     'littleRedRidingHood.json',
     't2s.json',
     'capitolRiot.json',
+    'lusa_0.json',
   ];
 
   async function file(filename) {
