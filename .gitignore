@@ -1,1 +1,6 @@
 .DS_Store
+
+# Lusa texts
+/assets/narratives/lusa*.json
+
+/.idea

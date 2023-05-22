@@ -3,14 +3,18 @@ import udpatePageTitle from './updatePageTitle.js';
 let _currFile;
 
 const FileHandler = () => {
-  const fnames = [
+  const num_lusa_files = 2;
+  const lusa_filenames = Array(num_lusa_files).fill().map((element, index) => "lusa_" + index + ".json");
+
+  const original_fnames = [
     'carnationRevolution.json',
     'formattedOgExample.json',
     'littleRedRidingHood.json',
     't2s.json',
     'capitolRiot.json',
-    'lusa_0.json',
   ];
+
+  const fnames = [...original_fnames, ...lusa_filenames] 
 
   async function file(filename) {
     udpatePageTitle(filename);
