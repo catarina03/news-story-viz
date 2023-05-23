@@ -2,5 +2,6 @@
 
 # Lusa texts
 /assets/narratives/lusa*.json
+/assets/brat
 
 /.idea

@@ -79,6 +79,7 @@ div.visualization {
 	overflow: scroll;
 }
 
+div#source-brat-container,
 div#options-container {
 	padding: 12px 12px;
 	/* position: fixed; */
@@ -200,6 +201,7 @@ p.location-name {
 }
 
 div.hide-sidebar-div,
+div.show-source-brat-div,
 div.download-pdf-div,
 div.about-button-div {
 	position: fixed;
@@ -220,6 +222,10 @@ div.download-pdf-div {
 }
 
 div.about-button-div {
+	right: 320px;
+}
+
+div.show-source-brat-div {
 	right: 224px;
 }
 

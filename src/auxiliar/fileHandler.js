@@ -1,4 +1,5 @@
 import udpatePageTitle from './updatePageTitle.js';
+import updateSourceAnnTab from './updateSourceAnnTab.js';
 
 let _currFile;
 
@@ -17,6 +18,15 @@ const FileHandler = () => {
   const fnames = [...original_fnames, ...lusa_filenames] 
 
   async function file(filename) {
+    // ANN file
+    const filenameAnn = filename.replace('.json', '.ann');
+    const responseAnn = await fetch(
+      `/assets/brat/${filenameAnn}`
+      );
+    const dataAnn = await responseAnn.text();
+    updateSourceAnnTab(filenameAnn, dataAnn)
+
+    // JSON file
     udpatePageTitle(filename);
     const response = await fetch(
       `/assets/narratives/${filename}`
