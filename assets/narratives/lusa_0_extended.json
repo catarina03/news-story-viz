@@ -1,0 +1,169 @@
+{
+    "title": "lusa_0",
+    "characters": [
+        {
+            "id": "T24",
+            "name": "A GNR",
+            "affiliation": "rgb(127,63,142)",
+            "synonyms": [
+                "GNR",
+                "o Comando Territorial",
+                "militares",
+                "Os militares"
+            ]
+        },
+        {
+            "id": "T27",
+            "name": "cerca de 50 pessoas",
+            "affiliation": "rgb(142,27,56)",
+            "synonyms": [
+                "as pessoas"
+            ]
+        },
+        {
+            "id": "T40",
+            "name": "o propriet\u00e1rio",
+            "affiliation": "rgb(0,101,193)"
+        }
+    ],
+    "locations": [
+        {
+            "value": "bar",
+            "id": "T42"
+        },
+        {
+            "value": "Corotelo",
+            "Part_Of": "T23",
+            "id": "T25"
+        },
+        {
+            "value": "concelho de S\u00e3o Br\u00e1s de Alportel",
+            "id": "T23"
+        },
+        {
+            "value": "Faro",
+            "id": "T46"
+        },
+        {
+            "value": "estabelecimento de bebidas",
+            "id": "T32"
+        },
+        {
+            "value": "Posto Territorial de S\u00e3o de Alportel",
+            "Part_Of": "T49",
+            "id": "T34"
+        },
+        {
+            "value": "S\u00e3o de Alportel",
+            "id": "T49"
+        },
+        {
+            "value": "local",
+            "synonyms": "T32",
+            "id": "T35"
+        }
+    ],
+    "dates": [
+        {
+            "time": "11 out 2020",
+            "TemporalFunction": "Publication_Time",
+            "id": "T43"
+        },
+        {
+            "time": "s\u00e1bado",
+            "TemporalFunction": "Publication_Time",
+            "id": "T2"
+        },
+        {
+            "time": "hoje",
+            "TemporalFunction": "Publication_Time",
+            "id": "T5"
+        }
+    ],
+    "scenes": [
+        {
+            "characters": [
+                "T24"
+            ],
+            "description": "A GNR acabou no s\u00e1bado com uma festa ilegal num bar em Corotelo, concelho de S\u00e3o Br\u00e1s de Alportel, que reunia cerca de 50 pessoas, foi hoje anunciado.",
+            "title": "A GNR acabou festa ilegal",
+            "location": [
+                "T42",
+                "T25"
+            ],
+            "date": [
+                "T2"
+            ]
+        },
+        {
+            "characters": [
+                "T27"
+            ],
+            "description": "A GNR acabou no s\u00e1bado com uma festa ilegal num bar em Corotelo, concelho de S\u00e3o Br\u00e1s de Alportel, que reunia cerca de 50 pessoas, foi hoje anunciado.",
+            "title": "festa ilegal reunia que cerca de 50 pessoas",
+            "location": [
+                "T42",
+                "T25"
+            ],
+            "date": []
+        },
+        {
+            "characters": [
+                "T24"
+            ],
+            "description": "Em comunicado, o Comando Territorial de Faro da GNR adianta que, na sequ\u00eancia de uma den\u00fancia a informar sobre a exist\u00eancia de \u201cuma festa com m\u00fasica ao vivo num estabelecimento de bebidas\u201d, militares do Posto Territorial de S\u00e3o de Alportel deslocaram-se ao local para fiscalizar a ocorr\u00eancia.",
+            "title": "o Comando Territorial adianta den\u00fancia exist\u00eancia festa ocorr\u00eancia",
+            "location": [
+                "T46",
+                "T32"
+            ],
+            "date": []
+        },
+        {
+            "characters": [],
+            "description": "Em comunicado, o Comando Territorial de Faro da GNR adianta que, na sequ\u00eancia de uma den\u00fancia a informar sobre a exist\u00eancia de \u201cuma festa com m\u00fasica ao vivo num estabelecimento de bebidas\u201d, militares do Posto Territorial de S\u00e3o de Alportel deslocaram-se ao local para fiscalizar a ocorr\u00eancia.",
+            "title": "festa exist\u00eancia",
+            "location": [
+                "T32"
+            ],
+            "date": []
+        },
+        {
+            "characters": [
+                "T24"
+            ],
+            "description": "Em comunicado, o Comando Territorial de Faro da GNR adianta que, na sequ\u00eancia de uma den\u00fancia a informar sobre a exist\u00eancia de \u201cuma festa com m\u00fasica ao vivo num estabelecimento de bebidas\u201d, militares do Posto Territorial de S\u00e3o de Alportel deslocaram-se ao local para fiscalizar a ocorr\u00eancia.",
+            "title": "militares deslocaram-se den\u00fancia",
+            "location": [],
+            "date": []
+        },
+        {
+            "characters": [
+                "T24"
+            ],
+            "description": "Em comunicado, o Comando Territorial de Faro da GNR adianta que, na sequ\u00eancia de uma den\u00fancia a informar sobre a exist\u00eancia de \u201cuma festa com m\u00fasica ao vivo num estabelecimento de bebidas\u201d, militares do Posto Territorial de S\u00e3o de Alportel deslocaram-se ao local para fiscalizar a ocorr\u00eancia.",
+            "title": "militares fiscalizar ocorr\u00eancia",
+            "location": [],
+            "date": []
+        },
+        {
+            "characters": [
+                "T24",
+                "T27"
+            ],
+            "description": "Os militares desmobilizaram as pessoas para \u201ccumprimento das normas referentes \u00e0 pandemia de covid-19\u201d.",
+            "title": "Os militares desmobilizaram as pessoas cumprimento normas referentes \u00e0 pandemia de covid-19",
+            "location": [],
+            "date": []
+        },
+        {
+            "characters": [
+                "T40"
+            ],
+            "description": "Na nota \u00e9 ainda referido que o propriet\u00e1rio foi identificado e foi elaborado \u201cum auto de contraordena\u00e7\u00e3o\u201d.",
+            "title": "o propriet\u00e1rio identificado",
+            "location": [],
+            "date": []
+        }
+    ]
+}

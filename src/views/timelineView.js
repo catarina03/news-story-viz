@@ -3,8 +3,14 @@ import { createTransition } from '../auxiliar/auxiliar.js';
 import { convertDate } from '../auxiliar/convertDates.js';
 import Event from '../auxiliar/event.js';
 
-const SVG_HEIGHT = 150;
-const LEGEND_BUFFER = 75;
+// const SVG_HEIGHT = 150; // By Mariana 
+// Change height here
+let SVG_HEIGHT = 200;
+
+// 75 by mariana for short text
+// catarina made it a const to be multiplied by each char of the last scene
+const LEGEND_BUFFER = 8; 
+let LAST_SCENE_SIZE = 10;
 
 const TimelineView = () => {
 	const dragDateEvent = Event();
@@ -20,6 +26,17 @@ const TimelineView = () => {
 		narrative = _narrative || narrative;
 		const scenes = narrative.scenes();
 		const layoutSize = narrative.size()[0];
+		
+
+		let sizesArray = []
+		scenes.forEach(s => {
+			sizesArray.push(s.title.length)
+		});
+		LAST_SCENE_SIZE = Math.max(...sizesArray)
+		//SVG_HEIGHT = 150 + 91
+		console.log(narrative.size(),LAST_SCENE_SIZE, SVG_HEIGHT)
+
+		//narrative.size(layoutSize, )
 
 		const drag = d3
 			.drag()
@@ -39,7 +56,7 @@ const TimelineView = () => {
 			.join((enter) =>
 				enter.append('svg').attr('id', 'timeline').attr('height', SVG_HEIGHT)
 			)
-			.attr('width', (size) => size + LEGEND_BUFFER);
+			.attr('width', (size) => size + (LEGEND_BUFFER*LAST_SCENE_SIZE));
 
 		// Line
 		svg
@@ -51,6 +68,7 @@ const TimelineView = () => {
 			.attr('y1', SVG_HEIGHT - 4)
 			.attr('y2', SVG_HEIGHT - 4)
 			.attr('stroke', 'black');
+		console.log(lineDimensions)
 
 		// Date points
 		const datePoints = svg
@@ -62,16 +80,18 @@ const TimelineView = () => {
 
 				group
 					.append('text')
-					//.attr('title', 'hey')
 					.attr('class', 'date-text')
 					.attr('text-anchor', 'start')
 					.attr('y', -8)
 					.attr('x', 0)
-					.attr('transform', 'rotate(-25)')
+					.attr('transform', 'rotate(-20)')
 					.on('mouseenter', function (e, d) {
 						const tooltip = d3.select('.tooltip');
 						if (!d.hidden) {
 							tooltip.transition().duration(200).style('opacity', 1);
+							tooltip
+								.select('.tooltip-date')
+								.text('')
 							tooltip
 								.select('.tooltip-text')
 								.text(d.description);
@@ -94,6 +114,7 @@ const TimelineView = () => {
 					.attr('y', 0)
 					.attr('x', 0)
 					.attr('r', 4);
+				console.log(SCENE_WIDTH + 16)
 
 				return group;
 			})

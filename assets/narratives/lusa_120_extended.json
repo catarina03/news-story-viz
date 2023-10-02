@@ -1,0 +1,140 @@
+{
+    "title": "lusa_120",
+    "characters": [
+        {
+            "id": "T25",
+            "name": "Um jovem de 17 anos",
+            "affiliation": "rgb(226,231,216)"
+        },
+        {
+            "id": "T30",
+            "name": "ag\u00eancia Lusa",
+            "affiliation": "rgb(250,128,245)",
+            "synonyms": [
+                "Lusa"
+            ]
+        },
+        {
+            "id": "T32",
+            "name": "a PSP",
+            "affiliation": "rgb(45,167,83)",
+            "synonyms": [
+                "fonte",
+                "o Comando Metropolitano de Lisboa (Cometlis)",
+                "o Cometlis"
+            ]
+        },
+        {
+            "id": "T40",
+            "name": "quaisquer suspeitos",
+            "affiliation": "rgb(65,116,84)"
+        },
+        {
+            "id": "T41",
+            "name": "Pol\u00edcia Judici\u00e1ria (PJ)",
+            "affiliation": "rgb(41,60,71)"
+        }
+    ],
+    "locations": [
+        {
+            "value": "bairro Casal da Mira",
+            "Part_Of": "T28",
+            "id": "T27"
+        },
+        {
+            "value": "Amadora",
+            "Part_Of": "T29",
+            "id": "T28"
+        },
+        {
+            "value": "distrito de Lisboa",
+            "id": "T29"
+        },
+        {
+            "value": "o Hospital Professor Doutor Fernando Fonseca [Amadora-Sintra]",
+            "id": "T37"
+        },
+        {
+            "value": "Lisboa",
+            "id": "T45"
+        }
+    ],
+    "dates": [
+        {
+            "time": "hoje de madrugada",
+            "TemporalFunction": "None",
+            "id": "T3"
+        },
+        {
+            "time": "00:53",
+            "TemporalFunction": "None",
+            "id": "T8"
+        }
+    ],
+    "scenes": [
+        {
+            "characters": [
+                "T25"
+            ],
+            "description": "Um jovem de 17 anos ficou em estado muito grave depois de ter sido baleado no peito hoje de madrugada no bairro Casal da Mira, na Amadora, no distrito de Lisboa, disse \u00e0 ag\u00eancia Lusa fonte da PSP.",
+            "title": "Um jovem de 17 anos em estado muito grave",
+            "location": [],
+            "date": []
+        },
+        {
+            "characters": [
+                "T25"
+            ],
+            "description": "Um jovem de 17 anos ficou em estado muito grave depois de ter sido baleado no peito hoje de madrugada no bairro Casal da Mira, na Amadora, no distrito de Lisboa, disse \u00e0 ag\u00eancia Lusa fonte da PSP.",
+            "title": "Um jovem de 17 anos baleado",
+            "location": [
+                "T27",
+                "T28",
+                "T29"
+            ],
+            "date": [
+                "T3"
+            ]
+        },
+        {
+            "characters": [
+                "T30",
+                "T32"
+            ],
+            "description": "Um jovem de 17 anos ficou em estado muito grave depois de ter sido baleado no peito hoje de madrugada no bairro Casal da Mira, na Amadora, no distrito de Lisboa, disse \u00e0 ag\u00eancia Lusa fonte da PSP.",
+            "title": "fonte disse ag\u00eancia Lusa",
+            "location": [],
+            "date": []
+        },
+        {
+            "characters": [
+                "T30",
+                "T32"
+            ],
+            "description": "\u00c0 Lusa, o Cometlis adiantou que as causas para o incidente s\u00e3o desconhecidas e que ainda n\u00e3o foram identificados ou detidos quaisquer suspeitos.",
+            "title": "o Cometlis adiantou Lusa",
+            "location": [],
+            "date": []
+        },
+        {
+            "characters": [
+                "T32",
+                "T40"
+            ],
+            "description": "\u00c0 Lusa, o Cometlis adiantou que as causas para o incidente s\u00e3o desconhecidas e que ainda n\u00e3o foram identificados ou detidos quaisquer suspeitos.",
+            "title": "o Cometlis identificados quaisquer suspeitos",
+            "location": [],
+            "date": []
+        },
+        {
+            "characters": [
+                "T32",
+                "T40"
+            ],
+            "description": "\u00c0 Lusa, o Cometlis adiantou que as causas para o incidente s\u00e3o desconhecidas e que ainda n\u00e3o foram identificados ou detidos quaisquer suspeitos.",
+            "title": "o Cometlis detidos quaisquer suspeitos",
+            "location": [],
+            "date": []
+        }
+    ]
+}

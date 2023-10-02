@@ -44,13 +44,15 @@ const VisualizationView = () => {
 					.on('mouseenter', function (e, d) {
 						const tooltip = d3.select('.tooltip');
 						if (!d.hidden) {
+							const datesArray = d.date.map(date => {return date.time})
+							const locationsArray = d.location.map(location => {return location.value})
 							tooltip.transition().duration(200).style('opacity', 1);
 							tooltip
 								.select('.tooltip-date')
-								.text(d.date ? `🕐${convertDate(new Date(d.date), true)}` : '');
+								.text(d.date.length > 0 ? `🕐${datesArray.join(', ')}` : '🕐data não definida');
 							tooltip
 								.select('.tooltip-text')
-								.text(d.location ? `📍${d.location.where}` : '');
+								.text(d.location.length > 0 ? `📌${locationsArray.join(', ')}` : '📌local não definido');
 							tooltip
 								.style('left', e.pageX + 'px')
 								.style('top', e.pageY + 'px');

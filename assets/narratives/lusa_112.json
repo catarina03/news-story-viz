@@ -1,0 +1,139 @@
+{
+    "title": "lusa_112",
+    "characters": [
+        {
+            "id": "T4",
+            "name": "O deputado socialista Ricardo Pinheiro",
+            "affiliation": "rgb(96,203,27)",
+            "synonyms": [
+                "o novo secret\u00e1rio de Estado",
+                "Ricardo Pinheiro",
+                "Ricardo Miguel Furtado Pinheiro"
+            ]
+        },
+        {
+            "id": "T24",
+            "name": "Jos\u00e9 Mendes",
+            "affiliation": "rgb(194,29,121)",
+            "synonyms": [
+                "Jos\u00e9 Fernandes Gomes Mendes"
+            ]
+        },
+        {
+            "id": "T27",
+            "name": "O Presidente da Rep\u00fablica",
+            "affiliation": "rgb(52,142,64)"
+        },
+        {
+            "id": "T28",
+            "name": "o primeiro-ministro",
+            "affiliation": "rgb(125,40,164)"
+        },
+        {
+            "id": "T34",
+            "name": "o ministro do Planeamento",
+            "affiliation": "rgb(62,24,74)",
+            "synonyms": [
+                "Nelson de Sousa",
+                "o novo secret\u00e1rio de Estado",
+                "Ricardo Pinheiro"
+            ]
+        },
+        {
+            "id": "T47",
+            "name": "C\u00e2mara",
+            "affiliation": "rgb(171,105,138)"
+        }
+    ],
+    "locations": [
+        {
+            "value": "o Pal\u00e1cio de Bel\u00e9m.",
+            "id": "T36"
+        },
+        {
+            "value": "distrito de Portalegre",
+            "id": "T40"
+        },
+        {
+            "value": "Campo Maior",
+            "id": "T46"
+        }
+    ],
+    "dates": [
+        {
+            "time": "hoje",
+            "TemporalFunction": "Publication_Time",
+            "id": "T3"
+        },
+        {
+            "time": "hoje",
+            "TemporalFunction": "Publication_Time",
+            "id": "T17"
+        },
+        {
+            "time": "20:30",
+            "id": "T18"
+        },
+        {
+            "time": "06 nov 2020",
+            "TemporalFunction": "Publication_Time",
+            "id": "T44"
+        }
+    ],
+    "scenes": [
+        {
+            "characters": [
+                "T4",
+                "T24",
+                "T34"
+            ],
+            "description": "O deputado socialista Ricardo Pinheiro vai substituir Jos\u00e9 Mendes no cargo de secret\u00e1rio de Estado do Planeamento, mudan\u00e7a que foi hoje anunciada atrav\u00e9s de uma nota divulgada no portal da Presid\u00eancia da Rep\u00fablica.",
+            "title": "O deputado socialista Ricardo Pinheiro vai substituir Jos\u00e9 Mendes no cargo de secret\u00e1rio de Estado do Planeamento, mudan\u00e7a que foi hoje anunciada atrav\u00e9s de uma nota divulgada no portal da Presid\u00eancia da Rep\u00fablica.",
+            "date": [
+                "T3"
+            ],
+            "location": []
+        },
+        {
+            "characters": [
+                "T4",
+                "T24",
+                "T27",
+                "T28"
+            ],
+            "description": "\"O Presidente da Rep\u00fablica aceitou a proposta do primeiro-ministro de exonera\u00e7\u00e3o, a seu pedido, de Jos\u00e9 Fernandes Gomes Mendes, como secret\u00e1rio de Estado do Planeamento, e a nomea\u00e7\u00e3o, para o mesmo cargo, de Ricardo Miguel Furtado Pinheiro\", l\u00ea-se na nota.",
+            "title": "\"O Presidente da Rep\u00fablica aceitou a proposta do primeiro-ministro de exonera\u00e7\u00e3o, a seu pedido, de Jos\u00e9 Fernandes Gomes Mendes, como secret\u00e1rio de Estado do Planeamento, e a nomea\u00e7\u00e3o, para o mesmo cargo, de Ricardo Miguel Furtado Pinheiro\", l\u00ea-se na nota.",
+            "date": [],
+            "location": []
+        },
+        {
+            "characters": [
+                "T4",
+                "T34"
+            ],
+            "description": "A posse do novo secret\u00e1rio de Estado do ministro do Planeamento, Nelson de Sousa, ter\u00e1 lugar ainda hoje, pelas 20:30, no Pal\u00e1cio de Bel\u00e9m.",
+            "title": "A posse do novo secret\u00e1rio de Estado do ministro do Planeamento, Nelson de Sousa, ter\u00e1 lugar ainda hoje, pelas 20:30, no Pal\u00e1cio de Bel\u00e9m.",
+            "date": [
+                "T17",
+                "T18"
+            ],
+            "location": [
+                "T36"
+            ]
+        },
+        {
+            "characters": [
+                "T4",
+                "T34",
+                "T47"
+            ],
+            "description": "Ricardo Pinheiro foi presidente da C\u00e2mara de Campo Maior, distrito de Portalegre, c\u00edrculo pelo qual foi eleito deputado nas \u00faltimas elei\u00e7\u00f5es legislativas.",
+            "title": "Ricardo Pinheiro foi presidente da C\u00e2mara de Campo Maior, distrito de Portalegre, c\u00edrculo pelo qual foi eleito deputado nas \u00faltimas elei\u00e7\u00f5es legislativas.",
+            "date": [],
+            "location": [
+                "T40",
+                "T46"
+            ]
+        }
+    ]
+}

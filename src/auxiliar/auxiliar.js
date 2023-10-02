@@ -8,24 +8,72 @@ const Location = (where, color) => {
 };
 
 const wrangle = (data) => {
-  let locations = new Map();
-  let currentLocation;
+  let locations = []
+  let dates = []
   let charactersMap = {};
 
   const formattedScenes = data.scenes.map(function (scene, i) {
+    // Note by Catarina: not needed anymore
+    /*
     const locationKey =
       typeof scene.location === 'object'
         ? scene.location.where
         : scene.location;
+
+    const dateKeys = 
+      typeof scene.date === 'object'
+          ? scene.date.where
+          : scene.date;
+    */
+
+    let currentDates = []
+    for (let i = 0; i < scene.date.length; i++) {
+      let currentDate = data.dates.filter(x => x.id === scene.date[i])
+      currentDate.forEach(element => {
+        dates.push(element)
+        currentDates.push(element)
+      }); 
+    }
+    scene.date = currentDates
+
+    let currentLocations = []
+    for (let i = 0; i < scene.location.length; i++) {
+      let currentLocation = data.locations.filter(x => x.id === scene.location[i])
+      currentLocation.forEach(element => {
+        locations.push(element)
+        currentLocations.push(element)
+      }); 
+    }
+    scene.location = currentLocations
+
+    // Note by Catarina: not needed anymore
+    /*
     currentLocation = locations.get(locationKey);
-    if (!currentLocation && scene.location) {
+    if (data.locations && data.locations[scene.location]) {
+      if (!currentLocation && scene.location) {
+        currentLocation =
+          typeof data.locations[scene.location]['value'] === 'object'
+            ? data.locations[scene.location]['value']
+            : Location(data.locations[scene.location]['value'], randomColor());
+        //locations.set(locationKey, currentLocation);
+        locations.push(currentLocation);
+      }
+    }
+    else {
+      if (!currentLocation && scene.location) {
       currentLocation =
         typeof scene.location === 'object'
           ? scene.location
           : Location(scene.location, randomColor());
-      locations.set(locationKey, currentLocation);
+      //locations.set(locationKey, currentLocation);
+      locations.push(currentLocation);
+      }
     }
+    */
+    //currentDate = dates
+
     scene.id = `${data.filename}-scene-${i}`;
+
     return {
       characters: scene.characters
         .map(function (id) {
@@ -38,7 +86,7 @@ const wrangle = (data) => {
       date: scene.date,
       title: scene.title,
       description: scene.description,
-      location: currentLocation,
+      location: scene.location,
       highlighted: false,
       hidden: false,
       id: scene.id,
@@ -72,6 +120,7 @@ const wrangle = (data) => {
     title: data.title || 'News Viz',
     scenes: formattedScenes,
     locations,
+    dates,
   };
 };
 

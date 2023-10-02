@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="index.css" />
     <title id="page-title">News Viz</title>
   </head>
 
@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/svg-to-pdfkit@0.1.8/source.js"></script>
     <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
     <script src="https://d3js.org/d3.v6.min.js"></script>
-    <script type="module" src="/index.js"></script>
+    <script type="module" src="index.js"></script>
     <div id="about-container">
       <div id="about">
         <button id="about-close">Close</button>
@@ -80,12 +80,18 @@
       <div id="options-container">
         <div class="options">
           <h1>News Viz</h1>
-          <div id="storyline-picker">
+          <div id="storyline-picker" style="margin-bottom: 4px;">
             <label class="storyline-picker-label">Escolha uma história</label>
             <select
               name="storyline-picker-select"
               id="storyline-picker-select"
             ></select>
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox-timeline-extended" />
+            <label for="checkbox-timeline-extended"
+              >Apresentar timeline extendida</label
+            >
           </div>
           <button class="block character-button" id="button-reset-storyline">
             Reiniciar história

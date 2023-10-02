@@ -39,7 +39,7 @@ const SceneInfoController = (narrative) => {
 						}))
 				  )
 				: undefined,
-			scene && scene.location ? scene.location.where : undefined
+			scene && scene.location ? scene.location : undefined
 		);
 	}
 

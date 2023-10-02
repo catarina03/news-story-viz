@@ -26,10 +26,10 @@ function extractEntities(text, entities) {
 							: ''
 					}`
 			)
-			.join('|')}`,
+			.join('|')
+			.replace(/[.*+?^${}()[\]\\]/g, '\\$&')}`, // Added because original regex wasn't working
 		'ig'
 	);
-	console.log(regex);
 	return text.replaceAll(regex, replaceAndAddSpan);
 }
 

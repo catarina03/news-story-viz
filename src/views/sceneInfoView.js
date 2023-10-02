@@ -23,11 +23,13 @@ const SceneInfoView = () => {
 	}
 
 	function update(title, date, description, location) {
+		const datesArray = date ? date.map(date => {return date.time}) : undefined
+		const locationsArray = location ? location.map(location => {return location.value}) : undefined
 		document.getElementById('event-date').innerHTML = date
-			? `🕐${convertDate(new Date(date), true)}`
+			? datesArray && datesArray.length > 0 ? `🕐${datesArray.join(', ')}` : '🕐data não definida'
 			: '';
 		document.getElementById('event-location').innerHTML = location
-			? `📍${location}`
+			? locationsArray && locationsArray.length > 0 ? `📌${locationsArray.join(', ')}`: '📌local não definido'
 			: '';
 		document.getElementById('event-title').innerHTML = title
 			? title
