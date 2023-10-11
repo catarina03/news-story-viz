@@ -1,0 +1,135 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "News story",
+    "description": "Main story elements necessary to the creation of a storyline visualization",
+    "type": "object",
+    "properties": {
+      "title": {
+        "description": "The title of the story",
+        "type": "string"
+      },
+      "characters": {
+        "description": "Entities who participate in the story",
+        "type": "array",
+              "items": {"$ref" : "#/$defs/character"}
+      },
+      "locations": {
+        "description": "Locations which appear in the story",
+        "type": "array",
+              "items": {"$ref" : "#/$defs/location"}
+      },
+      "dates": {
+        "description": "Dates which appear in the story",
+        "type": "array",
+              "items": {"$ref" : "#/$defs/date"}
+      },
+      "scenes": {
+        "description": "Events in a story",
+        "type": "array",
+              "items": {"$ref" : "#/$defs/scene"}
+      }
+    },
+      "$defs": {
+      "character": {
+        "type": "object",
+        "required": [ "id", "name" ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "The ID of the entity"
+            },
+            "name": {
+                "type": "string",
+                "description": "The name of the entity"
+            },
+            "affiliation": {
+                "type": "string",
+                "description": "RGB value of the entity line in the visualization in the format 'rbg(R, G, B)'"
+            },
+            "synonyms": {
+                "type": "array",
+                "descriptions": "Other names by which this entity can be referred to in the description texts",
+                "items": {"type" : "string"}
+            }
+        }
+      },
+      "location": {
+        "type": "object",
+        "required": [ "id", "value" ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "The ID of the entity"
+            },
+            "value": {
+                "type": "string",
+                "description": "The name of the entity"
+            },
+            "Part_Of": {
+                "type": "string",
+                "description": "The ID of the entity this location is a part of, through a OLINK_PartOf relation"
+            },
+            "Parts": {
+                "type": "string",
+                "description": "The ID of the entity that is a direct part of this location, through a OLINK_PartOf relation"
+            },
+            "synonyms": {
+                "type": "string",
+                "descriptions": "The ID of the entity that is a direct synonym of this location, through a OLINK_Identity relation",
+            }
+        }
+      },
+      "date": {
+        "type": "object",
+        "required": [ "id", "time" ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "The ID of the entity"
+            },
+            "time": {
+                "type": "string",
+                "description": "The value of the entity."
+            },
+            "TemporalFunction": {
+                "type": "string",
+                "description": "The type of temporal anchor the entity represents for other temporal expressions in the document"
+            },
+            "value": {
+                "type": "string",
+                "descriptions": "The date in a valid date format"
+            }
+        }
+      },
+        "scene": {
+        "type": "object",
+        "required": [ "characters", "description", "title" ],
+        "properties": {
+            "characters": {
+                "type": "array",
+                "description": "ID's of the entities that participate in this event",
+                "items": { "type": "string"}
+            },
+            "description": {
+                "type": "string",
+                "description": "Description of this event"
+            },
+            "title": {
+                "type": "string",
+                "description": "Title of this event"
+            },
+            "date": {
+                "type": "array",
+                "descriptions": "IDs of the dates of this event.",
+                "items": { "type": "string"}
+            },
+            "location": {
+                "type": "array",
+                "descriptions": "IDs of the locations of this event",
+                "items": { "type": "string"}
+            }
+        }
+      }
+    },
+    "required": [ "title", "characters", "scenes" ]
+  }
