@@ -1,0 +1,81 @@
+{
+    "title": "lusa_0",
+    "characters": [
+        {
+            "id": "T24",
+            "name": "The GNR",
+            "affiliation": "rgb(127,63,142)",
+            "synonyms": [
+                "GNR",
+                "military"
+            ]
+        },
+        {
+            "id": "T27",
+            "name": "about 50 people",
+            "affiliation": "rgb(142,27,56)"
+        },
+        {
+            "id": "T40",
+            "name": "the owner",
+            "affiliation": "rgb(0,101,193)"
+        }
+    ],
+    "locations": [
+        {
+            "value": "bar",
+            "id": "T42"
+        }
+    ],
+    "dates": [
+        {
+            "time": "Saturday",
+            "TemporalFunction": "Publication_Time",
+            "id": "T2"
+        }
+    ],
+    "scenes": [
+        {
+            "characters": [
+                "T24"
+            ],
+            "description": "GNR breaks up illegal party in bar on Saturday, reuniting about 50 people.",
+            "title": "GNR broke up illegal party",
+            "location": [
+                "T42"
+            ],
+            "date": [
+                "T2"
+            ]
+        },
+        {
+            "characters": [
+                "T27"
+            ],
+            "description": "GNR breaks up illegal party in bar on Saturday, reuniting about 50 people.",
+            "title": "Illegal party reunited about 50 people",
+            "location": [
+                "T42"
+            ],
+            "date": []
+        },
+        {
+            "characters": [
+                "T24"
+            ],
+            "description": "In a statement, the GNR said that, following a complaint about a party with live music, soldiers inspected the occurrence.",
+            "title": "military inspected occurrence",
+            "location": [],
+            "date": []
+        },
+        {
+            "characters": [
+                "T40"
+            ],
+            "description": "The note also states that the owner has been identified.",
+            "title": "the owner identified",
+            "location": [],
+            "date": []
+        }
+    ]
+}
