@@ -15,7 +15,7 @@ const HideSidebarView = () => {
 				document.getElementById('options-container').style.display = sidebarIsHidden
 					? 'block'
 					: 'none';
-				event.target.innerHTML = sidebarIsHidden ? 'Esconder barra lateral' : 'Mostrar barra lateral';
+				event.target.innerHTML = sidebarIsHidden ? 'Hide sidebar' : 'Show sidebar';
 				sidebarIsHidden = document.getElementById('options-container').style.display === 'none';
 			});
 
@@ -24,12 +24,12 @@ const HideSidebarView = () => {
 			.getElementById('show-source-brat-button')
 			.addEventListener('click', (event) => 	{
 				sourceAnnIsHidden = document.getElementById('source-brat-container').style.display === 'none';
-				if (sidebarIsHidden){
+				//if (sidebarIsHidden){
 					document.getElementById('source-brat-container').style.display = sourceAnnIsHidden
 						? 'block'
 						: 'none';
-					event.target.innerHTML = sourceAnnIsHidden ? 'Esconder ficheiro .ann' : 'Mostrar ficheiro .ann';
-				}
+					event.target.innerHTML = sourceAnnIsHidden ? 'Hide .ann file' : 'Show .ann file';
+				//}
 				sourceAnnIsHidden = document.getElementById('source-brat-container').style.display === 'none';
 			}
 		);		

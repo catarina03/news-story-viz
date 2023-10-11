@@ -501,6 +501,13 @@ const InteractiveNarrative = () => {
 		resetTimeframe();
 		triggerStorylineChangeEvents();
 	}
+	
+	async function changeStorylineFile(file) {
+		resetSceneFocus();
+		await narrative.changeStorylineFile(file);
+		resetTimeframe();
+		triggerStorylineChangeEvents();
+	}
 
 	// =============
 	// Aux
@@ -592,6 +599,7 @@ const InteractiveNarrative = () => {
 		resetStoryline,
 		changeStoryline,
 		changeStorylineVersion,
+		changeStorylineFile,
 		getNarrativeEvent,
 		spaceOutScenes,
 		changeIntroPos,

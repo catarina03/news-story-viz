@@ -8,10 +8,16 @@ const StorylinePickerController = (narrative) => {
 	function init() {
 		storylinePickerView.changeStorylineEvent.addListener(changeStoryline);
 		storylinePickerView.changeStorylineVersionEvent.addListener(changeStorylineVersion);
+		storylinePickerView.changeStorylineFileEvent.addListener(changeStorylineFile);
 	}
 
 	async function changeStoryline(filename) {
 		await narrative.changeStoryline(filename);
+	}
+
+	async function changeStorylineFile(file) {
+		await narrative.changeStorylineFile(file);
+		console.log(file)
 	}
 
 	async function changeStorylineVersion(extended, filename) {

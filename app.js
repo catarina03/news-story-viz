@@ -14,6 +14,7 @@ import IntroVisualizationController from './src/controllers/introVisualizationCo
 import MainVisualizationController from './src/controllers/mainVisualizationController.js';
 import AboutController from './src/controllers/aboutController.js';
 import TitleController from './src/controllers/titleController.js';
+import UploadController from './src/controllers/uploadController.js';
 
 const App = () => {
 	const models = {
@@ -37,6 +38,7 @@ const App = () => {
 		storylinePicker: StorylinePickerController(models.narrative),
 		timeline: TimelineController(models.narrative),
 		about: AboutController(),
+		upload: UploadController(),
 		title: TitleController(models.narrative),
 	};
 

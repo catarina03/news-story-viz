@@ -203,6 +203,7 @@ p.location-name {
 div.hide-sidebar-div,
 div.show-source-brat-div,
 div.download-pdf-div,
+div.upload-json,
 div.about-button-div {
 	position: fixed;
 	width: 64px;
@@ -221,8 +222,12 @@ div.download-pdf-div {
 	right: 32px;
 }
 
-div.about-button-div {
+div.upload-json {
 	right: 320px;
+}
+
+div.about-button-div {
+	right: 416px;
 }
 
 div.show-source-brat-div {
@@ -241,6 +246,7 @@ label.storyline-picker-label {
 	margin: 8px 0;
 }
 
+div#upload-container,
 div#about-container {
 	display: none;
 	position: absolute;
@@ -252,6 +258,7 @@ div#about-container {
 	z-index: 4;
 }
 
+div#upload,
 div#about {
 	position: relative;
 	padding: 16px;

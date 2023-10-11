@@ -49,10 +49,10 @@ const VisualizationView = () => {
 							tooltip.transition().duration(200).style('opacity', 1);
 							tooltip
 								.select('.tooltip-date')
-								.text(d.date.length > 0 ? `🕐${datesArray.join(', ')}` : '🕐data não definida');
+								.text(d.date.length > 0 ? `🕐${datesArray.join(', ')}` : '🕐undefined date');
 							tooltip
 								.select('.tooltip-text')
-								.text(d.location.length > 0 ? `📌${locationsArray.join(', ')}` : '📌local não definido');
+								.text(d.location.length > 0 ? `📌${locationsArray.join(', ')}` : '📌undefined place');
 							tooltip
 								.style('left', e.pageX + 'px')
 								.style('top', e.pageY + 'px');

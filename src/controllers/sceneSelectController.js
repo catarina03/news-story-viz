@@ -10,6 +10,8 @@ const SceneSelectController = (narrative) => {
 		narrative
 			.getNarrativeEvent(NarrativeEvents.SCENE_SELECT_CHANGE_EVENT)
 			.addListener(updateSceneSelectView);
+
+		
 	}
 
 	function changeSceneStrength(id, checked) {

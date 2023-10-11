@@ -26,17 +26,17 @@ const SceneInfoView = () => {
 		const datesArray = date ? date.map(date => {return date.time}) : undefined
 		const locationsArray = location ? location.map(location => {return location.value}) : undefined
 		document.getElementById('event-date').innerHTML = date
-			? datesArray && datesArray.length > 0 ? `🕐${datesArray.join(', ')}` : '🕐data não definida'
+			? datesArray && datesArray.length > 0 ? `🕐${datesArray.join(', ')}` : '🕐undefined date'
 			: '';
 		document.getElementById('event-location').innerHTML = location
-			? locationsArray && locationsArray.length > 0 ? `📌${locationsArray.join(', ')}`: '📌local não definido'
+			? locationsArray && locationsArray.length > 0 ? `📌${locationsArray.join(', ')}`: '📌undefined place'
 			: '';
 		document.getElementById('event-title').innerHTML = title
 			? title
-			: 'Selecione um evento';
+			: 'Select an event';
 		document.getElementById('event-info').innerHTML = description
 			? description
-			: 'Clique num evento ou no botão `Próximo evento` para consultar mais informação sobre um evento em particular';
+			: 'Click on an event or the `Next event` button to see more information about a particular event ';
 	}
 
 	return {
